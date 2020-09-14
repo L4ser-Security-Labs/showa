@@ -70,8 +70,10 @@ MAILTO=youremail@gmail.com
 To stop receiving notifications
 
 ```sh
-crontab -r
+crontab -e
 ```
+
+Go ahead to delete the lines created above.
 
 ## Usage
 
