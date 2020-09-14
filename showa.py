@@ -38,13 +38,13 @@ smtp_server.login(SENDER, PASSWORD)
 parser = argparse.ArgumentParser(description = "External Resource Monitor",\
 				add_help = False)
 
-parser.add_argument("-h", "--help", help = "Shows this message and exits",\
+parser.add_argument("-h", "--help", help = "Shows this help message and exits",\
 			action = "store_true")
 
 parser.add_argument("-r", help = "Path to resources.showa file", 
                     type = str)
 
-parser.add_argument("-e", help = "Email address to recieve notifications",
+parser.add_argument("-e", help = "Email address to receive notifications",
                     type = str)
 
 
@@ -124,6 +124,6 @@ if __name__ == "__main__":
 			monitor_resources(args.r)
 		elif validate_email(args.e) == False:
 			print(Style.RESET_ALL)		
-			print(Fore.RED + "\nInvalid Email address\n")
+			print(Fore.RED + "\nInvalid email address\n")
 			print(Style.RESET_ALL)
 		

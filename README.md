@@ -22,8 +22,9 @@
 - - -
 Automate external resources and assets monitoring.
 
-Showa allows you to automate the monotoring of external resources and assets during active red teaming assesments.
-Once a resource is down, you get an email notification notifying you of the status of the resouorce or assets.
+Showa allows you to automate the monitoring of external resources and assets during active red teaming assessments.
+Once a resource is down, you get an email notification notifying you of the status of the resources or assets.
+
 
 ## Install on Linux, Mac OS, Windows
 
@@ -35,14 +36,14 @@ pip3 install -r requirements.txt
 
 ## Configuration
 
-You can use any email provider of your choice but Showa supports only gmail out of the box in this version.
+You can use any email provider of your choice but Showa supports only Gmail out of the box in this version.
 
 ### Using Gmail
 
-In order to allow Showa send you email notifications, [enable less secure apps from your gmail account](https://myaccount.google.com/lesssecureapps?pli=1).
+To allow Showa to send you email notifications, [enable less secure apps from your Gmail account](https://myaccount.google.com/lesssecureapps?pli=1).
 If you don't allow you'll get an authentication error from Showa.
 
-Create a `.env` file and add your gmail credentials.
+Create a `.env` file and add your Gmail credentials.
 
 ```txt
 SENDER="youremail@gmail.com"
@@ -85,14 +86,15 @@ External Resource Monitor
 optional arguments:
   -h, --help  Shows this message and exits
   -r R        Path to resources.showa file
-  -e E        Email address to recieve notifications
+  -e E        Email address to receive notifications
 ```
 
 ## Showa in action
 
 ```bash
-# one time check status of resources
-# If any resource or asset from list is not avaialbel, you'll get an email notofication
+# one-time check status of resources
+# If any resource or asset from the list is not available, you'll get an email notification
+
 python3 showa.py -r resources.showa -e youremail@gmail.com
 ```
 
