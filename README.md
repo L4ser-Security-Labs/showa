@@ -26,7 +26,7 @@ Showa allows you to automate the monitoring of external resources and assets dur
 Once a resource is down, you get an email notification notifying you of the status of the resources or assets.
 
 
-## Install on Linux, Mac OS, Windows
+## Install on Linux, Mac OS
 
 ```bash
 git clone https://github.com/L4ser-Security-Labs/showa.git
